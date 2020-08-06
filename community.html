@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/community.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/d69fa2ec49.js"></script>
+    <title>SH | Community</title>
+</head>
+
+<body>
+    <div class="site-main-wrapper">
+    <h2 class="page-title">Community</h2>
+        <button class="hamburger"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></button>
+        <div class="mobile-nav">
+            <button class="times"><i class="fa fa-times fa-3x" aria-hidden="true"></i></button>
+            <h1>Community<br><br></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="community.html"><span>Community</span></a><br><br></li>
+                <li><a href="index.html#contact"><button id="contact-button" class="btn btn-primary">Contact</button></a></li>
+            </ul>
+        </div>
+        <header>
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding">
+                            <h1>Shabir Hassan</h1>
+                        </div>
+                        <div>
+                            <a href="index.html">Home</a>
+                            <a href="publications.html">Publications</a>
+                            <a href="community.html"><span>Community</span></a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a href="index.html#contact"><button class="btn btn-primary">Contact</button></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="community">
+            <div class="container comm-container">
+                <h1 class="pcomm-heading">Nothing to see.</h1>
+            </div>
+        </section>
+        <footer class="footer">
+        <h3 class="footer__title">Shabir Hassan</h3>
+        <div class="footer__social">
+            <a class="footer__icon" href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <!-- <a class="footer__icon" href="https://www.facebook.com/shabir.hassan.988/"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a> -->
+            <a class="footer__icon" href="https://www.instagram.com/shabirhsn/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a class="footer__icon" href="https://twitter.com/shabirhsn"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a class="footer__icon" href="https://www.linkedin.com/in/shabir-hassan-phd-24045922"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a class="footer__icon" href="https://www.quora.com/profile/Shabir-Hassan"><i class="fa fa-quora" aria-hidden="true"></i></a>
+        </div>
+        <div class="copyright">
+            Copyright 2020 | &copy; All Rights Reserved
+        </div>
+    </footer>
+    </div>
+</body>
+<script>
+    let hamburger = document.querySelector('.hamburger')
+    let times = document.querySelector('.times')
+    let mobileNav = document.querySelector('.mobile-nav')
+    let contactButton = document.querySelector('#contact-button')
+
+    hamburger.addEventListener('click', function() {
+        mobileNav.classList.add('open');
+    });
+
+    times.addEventListener('click', function() {
+        mobileNav.classList.remove('open');
+    });
+
+    contactButton.addEventListener('click', function() {
+        mobileNav.classList.remove('open');
+    });
+</script>
+
+</html>
