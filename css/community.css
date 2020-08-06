@@ -1,0 +1,65 @@
+section {
+    padding: 1rem;
+}
+
+section.community {
+    height: 42vh;
+}
+
+.page-title {
+    color: black;
+}
+
+.comm-container {
+    border: 1px solid black;
+    padding: 2rem;
+    background-color: #efefef;
+    margin: 3rem auto;
+}
+
+.comm-container h1 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.comm-container p {
+    margin-bottom: 1rem;
+}
+
+.comm-container .date {
+    margin: 1rem auto;
+    color: gray;
+}
+
+.hamburger i {
+    color: var(--dark);
+    background: var(--pure);
+}
+
+@media(max-width:840px) {
+    section {
+        padding: 4rem;
+    }
+}
+
+@media(max-width:768px) {
+    .comm-heading {
+        font-size: 1.6rem;
+    }
+    .comm-container p {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:576px) {
+    section {
+        padding: 1.5rem;
+        padding-top: 3.5rem;
+    }
+    .comm-heading {
+        font-size: 1.5rem;
+    }
+    .comm-container p {
+        font-size: 1rem;
+    }
+}

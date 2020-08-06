@@ -1,0 +1,587 @@
+@import 'utilities.css';
+:root {
+    --primary: #1b262c;
+    --dark: #00bcd4;
+    --pure: #FFFFFF;
+    --ternary: #050505;
+    --light: #ebebeb;
+    --secondary: #006a71;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 85%, 0 100%);
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+header nav .left a {
+    color: var(--ternary);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+header nav .left a span {
+    color: var(--pure);
+}
+
+header nav .left a:hover {
+    color: var(--ternary);
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+header nav .branding {
+    margin-right: 6rem;
+    color: var(--primary);
+}
+
+.page-title {
+    display: none;
+    position: absolute;
+    color: var(--pure);
+    left: 30px;
+    top: 45px;
+    z-index: 1001;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hero {
+    padding: 0;
+}
+
+.hero img {
+    width: 300px;
+    padding: 0;
+}
+
+.hero .right {
+    color: var(--pure);
+    margin-top: -7rem;
+}
+
+.hero .right h6 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h6 span {
+    color: var(--primary);
+}
+
+.hero .right h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span {
+    color: var(--primary);
+}
+
+.hero .right p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section.about .img-container {
+    text-align: center;
+}
+
+.about-me-image {
+    height: 450px;
+    border-radius: 2rem;
+}
+
+section.about h1 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section.about h1 span {
+    color: var(--primary);
+}
+
+section.about h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+section.about p {
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+}
+
+section.about .social {
+    padding-top: 1rem;
+    display: flex;
+}
+
+section.about .social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+section.about .social i {
+    text-decoration: none;
+    color: var(--primary);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+section.about .social a i:hover {
+    color: grey;
+}
+
+.section-heading {
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 10rem;
+    line-height: 0.5;
+    font-size: 2.2rem;
+}
+
+.section-heading span {
+    color: var(--primary);
+}
+
+section.experience {
+    background: var(--light);
+}
+
+section.experience .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+
+section.experience .card-wrapper .card {
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+section.experience .card-wrapper .card img {
+    position: absolute;
+    width: 100px;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.experience .card-wrapper .card h2 {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+}
+
+section.experience .card-wrapper .card ul li {
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+section.experience .card-wrapper .card h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+section.experience .card-wrapper .card p {
+    color: var(--ternary);
+}
+
+section.experience .card-wrapper .card:hover {
+    background: var(--dark);
+}
+
+section.experience .card-wrapper .card:hover h2,
+section.experience .card-wrapper .card:hover h3,
+section.experience .card-wrapper .card:hover p {
+    color: var(--pure);
+}
+
+section.contact .input-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.contact {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+section.contact .section-heading {
+    margin-bottom: 4rem;
+}
+
+section.contact .input-wrapper-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+section.contact .input-wrapper-2 input {
+    margin-bottom: 2rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+}
+
+section.contact input {
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+}
+
+section.contact .input-wrapper-2 textarea {
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+section.contact .input-wrapper-2 textarea:focus,
+section.contact input:focus {
+    outline: none;
+}
+
+section.contact .btn-wrapper {
+    text-align: center;
+}
+
+section.contact .btn-wrapper .btn-primary {
+    color: var(--pure);
+}
+
+section.contact .btn-wrapper .btn-primary:hover {
+    color: var(--primary);
+}
+
+section.awards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: wheat;
+}
+
+section.awards {
+    display: block;
+}
+
+section.awards .section-heading {
+    margin-bottom: 4rem;
+    color: var(--ternary);
+    display: block;
+}
+
+section.awards .section-heading span {
+    color: var(--secondary);
+}
+
+section.awards .card {
+    position: relative;
+    background: var(--pure);
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+section.awards .card .slider-text {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 5rem 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark);
+}
+
+section.awards .card .slider-text h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: -2rem;
+}
+
+section.awards .card .content {
+    width: 300px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+section.awards .card .content .date {
+    color: var(--ternary);
+}
+
+section.awards .card .content p span {
+    font-weight: bold;
+}
+
+.footer {
+    background-color: var(--dark);
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    padding: 2rem 0;
+}
+
+.footer__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer__social {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.footer__social a {
+    margin-bottom: 1rem;
+}
+
+.footer__icon i {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.footer__icon i:hover {
+    color: wheat;
+}
+
+.swiper-slide {
+    width: 300px;
+}
+
+.swiper-slide:nth-child(1) .card .slider-text {
+    background: #2196f3;
+}
+
+.swiper-slide:nth-child(2) .card .slider-text {
+    background: #E91E63;
+}
+
+.swiper-slide:nth-child(3) .card .slider-text {
+    background: #C3D41A;
+}
+
+.swiper-slide:nth-child(4) .card .slider-text {
+    background: #ff9800;
+}
+
+.swiper-slide:nth-child(5) .card .slider-text {
+    background: #C33AdA;
+}
+
+.site-main-wrapper {
+    position: relative;
+}
+
+button.hamburger {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    border: 0;
+    cursor: pointer;
+}
+
+.hamburger i {
+    color: var(--pure);
+    background: var(--dark);
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--light);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.mobile-nav .times {
+    border: none;
+    position: fixed;
+    top: 30px;
+    right: 5px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.mobile-nav ul {
+    list-style: none;
+}
+
+.mobile-nav ul li a {
+    color: var(--ternary);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.mobile-nav ul li a span {
+    color: var(--dark);
+}
+
+@media(max-width:840px) {
+    header #main-nav {
+        display: none;
+    }
+    .hamburger {
+        display: inline;
+    }
+    .page-title {
+        display: inline;
+    }
+}
+
+@media(max-width:768px) {
+    .mobile-nav .times {
+        right: 45px;
+        top: 40px
+    }
+    .hero {
+        padding-top: 4rem;
+        flex-direction: column;
+    }
+    .hero .right {
+        position: absolute;
+        top: 25rem;
+        padding: 0 2rem;
+    }
+    header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 95%, 0 100%);
+    }
+    section.about .container {
+        flex-direction: column;
+    }
+    section.about .social {
+        justify-content: center;
+    }
+}
+
+@media(max-width:576px) {
+    .hero img {
+        width: 285px;
+    }
+    .hero .right {
+        top: 20rem;
+    }
+    section.contact .input-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.experience .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section {
+        padding: 4rem 0;
+    }
+    section.about .right {
+        padding: 0 2rem;
+        text-align: justify;
+    }
+    section.about p {
+        font-size: 20px;
+    }
+    section.about .social a {
+        width: 60%;
+        margin-right: 0.5rem;
+    }
+    section.contact .section-heading {
+        line-height: 1.1;
+    }
+    section.contact {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    footer {
+        text-align: center;
+    }
+}

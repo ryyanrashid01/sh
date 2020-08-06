@@ -1,0 +1,183 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.page-title {
+    color: black;
+}
+
+section.publications {
+    padding: 2rem 1rem;
+    background: transparent;
+    padding-bottom: 0;
+}
+
+.publications input {
+    padding: 0.5rem;
+    margin-left: 1rem;
+    margin-top: -1.6rem;
+    position: absolute;
+    width: 16%;
+    border-radius: 5rem;
+    border: 1px solid black;
+}
+
+#search-keyword-sm {
+    display: none;
+}
+
+.publications input:focus {
+    outline: none;
+}
+
+.flex-20 {
+    width: 20%;
+    padding: 1rem;
+    overflow-y: scroll;
+    height: 480px;
+    font-size: 0.85rem;
+    border-bottom: 1px solid grey;
+}
+
+.flex-80 {
+    width: 80%;
+    padding: 1rem 6rem;
+    overflow-y: scroll;
+    height: 500px;
+    scroll-behavior: smooth;
+}
+
+.flex-20::-webkit-scrollbar,
+.flex-80::-webkit-scrollbar {
+    width: 1em;
+}
+
+.flex-20::-webkit-scrollbar-track,
+.flex-80::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+}
+
+.flex-20::-webkit-scrollbar-thumb,
+.flex-80::-webkit-scrollbar-thumb {
+    background-color: #006971a8;
+    border-radius: 100px;
+}
+
+.flex-80 .pub-container p {
+    text-align: justify;
+}
+
+section.publications .sidebar ul li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+section.publications .sidebar ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+section.publications .sidebar ul li a span {
+    color: grey;
+    font-size: 0.7rem;
+}
+
+section.publications .sidebar ul li a:hover {
+    color: cadetblue;
+}
+
+footer .footer__title {
+    font-size: 1.5rem;
+}
+
+.pub-container {
+    margin-bottom: 2rem;
+}
+
+.pub-container .pub-heading {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.pub-container .date {
+    color: grey;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.pub-container p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.pub-container a {
+    color: rgb(11, 112, 11);
+    text-decoration: none;
+    transition: 0.15s ease-in;
+}
+
+.pub-container a:hover {
+    color: #00bcd4;
+    margin-left: 20px;
+}
+
+hr {
+    width: 10%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 5px dotted rgba(128, 128, 128, 0.425);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+@media (max-width: 768px) {
+    section.publications {
+        padding-top: 8rem;
+    }
+    .flex-20,
+    .flex-80 {
+        height: calc(1024px - 9rem);
+    }
+    .flex-80 {
+        padding: 0 2rem;
+    }
+    .publications input {
+        width: 16%;
+        padding: 0.2rem;
+    }
+    .hamburger i {
+        background-color: white;
+        color: #00bcd4;
+    }
+}
+
+@media (max-width: 425px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .flex-80 {
+        width: 100%;
+        padding: 1rem;
+        height: calc(736px - 9rem);
+    }
+    .flex-20 {
+        display: none;
+    }
+    #search-keyword-sm {
+        display: block;
+        margin-left: 2rem;
+        width: 78%;
+        padding: 0.5rem;
+    }
+    .publications input {
+        display: none;
+    }
+}
