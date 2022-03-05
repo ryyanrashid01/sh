@@ -1,2 +1,2 @@
 # Shabir Hassan
-A website for Shabir Hassan (https://www.shabirhassan.com)
+A website for Shabir Hassan (http://www.shabirhassan.com)
