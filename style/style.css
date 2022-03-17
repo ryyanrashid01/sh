@@ -493,11 +493,6 @@ footer {
   .about-desc {
     width: 100%;
   }
-  .footer-logo,
-  .quick-links,
-  .socials {
-    border-bottom: 1px dashed black;
-  }
 }
 
 @media screen and (max-width: 414px) {
