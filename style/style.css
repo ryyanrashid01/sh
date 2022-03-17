@@ -355,7 +355,7 @@ footer {
 }
 
 .publication-icon {
-  display: none;
+  color: white;
   margin-left: 12px;
 }
 
@@ -365,7 +365,7 @@ footer {
 }
 
 .publication .title a:hover .publication-icon {
-  display: inline-block;
+  color: #343a40;
 }
 
 .publication .journal,
