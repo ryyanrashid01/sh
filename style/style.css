@@ -434,6 +434,7 @@ footer {
   background-color: white;
   border-radius: 20px;
   height: 150px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .award-img img {
