@@ -64,6 +64,7 @@ header {
 
 .nav-link.active-link a {
   color: black;
+  font-weight: 500;
 }
 
 .nav-link a:hover {
@@ -114,14 +115,13 @@ main {
 .about-details li {
   display: flex;
   font-weight: 500;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 18px 24px;
 }
 
 .about-desc-icon {
   margin-right: 12px;
-  color: #c52132;
+  color: #116ab3;
 }
 
 .bi-line {
@@ -153,26 +153,29 @@ main {
 .publication-covers {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 5rem 1rem;
+  gap: 3rem 1rem;
   padding-bottom: 2rem;
 }
 
 .publication-container,
 .publication-desc {
-  text-align: center;
   font-size: 14px;
 }
 
+.publication-container {
+  padding-top: 24px;
+  border-top: 4px solid #116ab3;
+}
+
 .publication-desc {
-  height: 50px;
-  border-bottom: 1px solid black;
+  padding-top: 1rem;
 }
 
 .publication-image img {
   width: 300px;
   height: 400px;
-  padding-bottom: 1rem;
   object-fit: cover;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* Affiliations */
@@ -294,12 +297,11 @@ footer {
   text-decoration-color: #116ab3;
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
-  transition: 0.3s;
 }
 
 .developer:hover {
   color: #747474;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration-color: #c52132;
 }
 
@@ -322,11 +324,8 @@ footer {
 
 .publication {
   padding-top: 1rem;
-  text-align: justify;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   padding: 24px 32px;
-  margin-bottom: 64px;
-  border-radius: 12px;
+  margin-bottom: 32px;
   border-top: 4px solid #116ab3;
 }
 
@@ -341,6 +340,10 @@ footer {
   text-decoration: underline;
   color: #747474;
   margin-bottom: 48px;
+}
+
+.content {
+  width: 70%;
 }
 
 .publication .title {
@@ -401,7 +404,6 @@ footer {
 
 .alumni table td,
 .alumni table th {
-  border: 1px solid #efefef;
   text-align: left;
   padding: 8px;
 }
@@ -432,7 +434,6 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: white;
-  border-radius: 20px;
   height: 150px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
@@ -493,6 +494,9 @@ footer {
   .about-desc {
     width: 100%;
   }
+  .content {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -503,7 +507,6 @@ footer {
     height: 250px;
     width: 250px;
   }
-  .about-desc p,
   .publication-desc,
   footer {
     font-size: 13px;
