@@ -18,7 +18,6 @@
   background-color: #116ab3;
   color: white;
   border: none;
-  border-radius: 5px;
 }
 
 .btn:hover {
@@ -33,6 +32,7 @@ header {
   background-color: #efefefb7;
   width: 100%;
   backdrop-filter: blur(6px);
+  z-index: 100;
 }
 
 .navbar {
@@ -63,12 +63,12 @@ header {
 }
 
 .nav-link.active-link a {
-  color: black;
+  color: #343a40;
   font-weight: 500;
 }
 
 .nav-link a:hover {
-  color: black;
+  color: #343a40;
 }
 
 .nav-mobile {
@@ -115,7 +115,6 @@ main {
 .about-details li {
   display: flex;
   font-weight: 500;
-  border-radius: 12px;
   padding: 18px 24px;
 }
 
@@ -176,7 +175,12 @@ main {
   height: 400px;
   object-fit: cover;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  transition: 200ms ease-in-out all;
 }
+
+/* .publication-container:hover .publication-image img {
+  transform: scale(1.02);
+} */
 
 /* Affiliations */
 
@@ -343,7 +347,7 @@ footer {
 }
 
 .content {
-  width: 70%;
+  width: 65%;
 }
 
 .publication .title {
@@ -422,10 +426,7 @@ footer {
 .awards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
-  background: #c9d6ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
-  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  gap: 3rem 3rem;
   color: #343a40;
 }
 
@@ -434,8 +435,8 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: white;
-  height: 150px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  border-top: 4px solid #116ab3;
 }
 
 .award-img img {
@@ -455,6 +456,7 @@ footer {
 .award-date {
   font-size: 13px;
   color: #747474;
+  padding-top: 1rem;
 }
 
 @media screen and (max-width: 900px) {
